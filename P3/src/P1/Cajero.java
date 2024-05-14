@@ -3,11 +3,12 @@ package P1;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Cajero {
+public class Cajero extends Empleado {
     private Map<String, Double> pagosRegistrados;
     private Map<String, String> metodosDePagoRegistrados; // Se añade para llevar el control de los métodos de pago
 
-    public Cajero() {
+    public Cajero(String nombre, String rol) {
+        super(nombre, rol);
         this.pagosRegistrados = new HashMap<>();
         this.metodosDePagoRegistrados = new HashMap<>();
     }
@@ -49,5 +50,11 @@ public class Cajero {
             System.out.println("Método de pago '" + metodo + "' registrado para " + comprador);
         }
     }
+
+	@Override
+	public void realizarTareas() {
+		// TODO Auto-generated method stub
+		
+	}
 }
 

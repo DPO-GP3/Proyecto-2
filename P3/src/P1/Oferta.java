@@ -18,5 +18,5 @@ public class Oferta {
         return monto;
     }
 
-    // ... cualquier otro método que necesites en tu clase Oferta
+    
 }

@@ -85,15 +85,15 @@ public class Visual {
                     controller.registrarOferta(new Subasta(), new Comprador("NombreComprador", 1000.0, 500.0), 100.0f);
                     break;
                 case 4:
-                    controller.procesarPago(new Cajero(), new Pago("NombreDelComprador", "Efectivo", 100.0, 1));
+                    controller.procesarPago(new Cajero("NombreCajero", "Cajero"), new Pago("NombreDelComprador", "Efectivo", 100.0, 1));
                     break;
                 case 5:
-                    Cajero cajero = new Cajero();
+                    Cajero cajero = new Cajero("NombreCajero", "Cajero");
                     Pago pago = new Pago("NombreDelComprador", "Efectivo", 100.0, 1);
                     controller.emitirRecibo(cajero, pago);
                     break;
                 case 6:
-                    controller.registrarMetodoPago(new Cajero(), new MetodoPago("NombreDelComprador", "Tarjeta de Crédito"));
+                    controller.registrarMetodoPago(new Cajero("NombreCajero", "Cajero"), new MetodoPago("NombreDelComprador", "Tarjeta de Crédito"));
                     break;
                 case 7:
                     Operador operador = new Operador("NombreOperador", "RolOperador", listaDeSubastasActivas);
