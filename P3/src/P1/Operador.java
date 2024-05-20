@@ -51,6 +51,8 @@ public class Operador extends Empleado {
         System.out.println("Asistiendo al comprador: " + comprador.getNombre());
         // La ayuda real podría incluir proporcionar información sobre las subastas actuales, cómo hacer una oferta, o los detalles de las piezas disponibles.
     }
+    
+    
 
 	
 }

@@ -61,14 +61,16 @@ public class Subasta {
         }
     }
 
-	public void setPagos(List<Pago> pagos) {
-		// TODO Auto-generated method stub
-		
-	}
+	
+	
 
-	public Pago[] getPagos() {
+	public Pieza[] getPiezas() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public void setPiezas(List<Pieza> piezas) {
+		// TODO Auto-generated method stub
 	}
 
 	public void setCompradores(List<Comprador> compradores) {
@@ -81,16 +83,20 @@ public class Subasta {
 		return null;
 	}
 
-	public Pieza[] getPiezas() {
+	public void setPagos(List<Pago> pagos) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Pago[] getPagos() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public void setPiezas(List<Pieza> piezas) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }
+	
+
 
 
     

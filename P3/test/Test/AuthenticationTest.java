@@ -15,12 +15,12 @@ class AuthenticationTest {
     @Before
     void setUp() {
         controller = new Controller();
-        // Inicializando usuarios de prueba
-        controller.agregarUsuarioValido("admin", "adminpass");
-        controller.agregarUsuarioValido("operador", "operpass");
-        controller.agregarUsuarioValido("cliente", "clientepass");
+        // Inicializando usuarios de prueba con roles específicos
+        controller.agregarUsuarioValido("admin", "adminpass", "administrador");
+        controller.agregarUsuarioValido("operador", "operpass", "operador");
+        controller.agregarUsuarioValido("cliente", "clientepass", "cliente");
     }
-W
+
     @Test
     public void testLoginSuccess() {
         assertTrue("La autenticación debería ser exitosa con credenciales correctas", 
